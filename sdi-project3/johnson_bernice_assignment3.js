@@ -12,8 +12,24 @@ var town = "Washington D.C.",
     timeLeftToWait = 0
 
 //ADD LOCAL VARIABLES
+//INTRO TO STORY//PROCEDURE METHOD
+var us = {
+	nameE = "Esther", //string property
+	nameB = "I",  //string property
+	getReady = "true", //boolean property
+	day = "Friday morning", //string property
+	wakeUp: function(day){  //string argument
+		if (this.day === "Frday morning") {
+            console.log("It\s day 2" + this.day + "of our trip." + this.nameE + "and" + this.nameB + "decide we would like to go on a Trolley Tour of " + town + " today." + weatherCheck + trolleyTimeInfo);
+        } else {
+    	    console.log("We should plan something else.");
+   
+        };  
 
-console.log("We would like to go on a Trolley Tour of " + town + " today." + weatherCheck + trolleyTimeInfo); //INTRO TO STORY
+}; //END PROCEDURE FUNCTION 
+us.wakeUp(day);	
+////////////////////////////////////////
+
 
 //1# Day 2. We decide to go on an Old Town Trolley Tour of Washington D.C.//I head down to the lobby 
 //to get more info on the time it arrives and possibly buy the tickets. Are we in time for the next tour? Is the weather good? (Method Function? conditional?)
@@ -42,16 +58,16 @@ var trolleyRideInfo = {
          }else{
          	if (town === "Washington D.C.") {
                console.log("We will go later.");
-
+               return false;
             }else{
             	console.log("Not going at all.");
-            };  
+            };  return false;
 
-};
+};//END OF 1# FUNCTION//return true
 
-trolleyRideInfo.niceWeather(true);
-//return true
-//END OF 1# FUNCTION
+trolleyRideInfo.niceWeather(goodWeather);
+/////////////////////////////////////////
+
 
 
 

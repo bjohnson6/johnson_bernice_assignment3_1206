@@ -41,11 +41,11 @@ var trolleyRideInfo = {
     goodWeather: true, //boolean property
     costPerTicket: 38, //number property
     manAtDeskName: "Sonny", //string property
-    niceWeather:  function(niceDay){  //METHOD FUNCTION//BOOLEAN ARGUMENT//ARGUMENT CONDITIONAL//NESTED CONDITIONAL//OUTPUT//RETURN
+    niceWeather: function(niceDay){  //METHOD FUNCTION//BOOLEAN ARGUMENT//ARGUMENT CONDITIONAL//NESTED CONDITIONAL//OUTPUT//RETURN
     	 if (niceDay === true) {
     	 	 console.log("The weather is nice enough outside to go on the " + this.name);
-    	 	 if ( timeNow <= whatTime) {
-    	 	 	timeLeftToWait = whatTime - timeNow; //MATH
+    	 	 if ( this.timeNow <= this.whatTime) {
+    	 	 	 var timeLeftToWait = this.whatTime - this.timeNow; //MATH
     	 		console.log("We asked the ticket master named " +  this.manAtDeskName + " about when the next tour starts today. He says at" + this.whatTime + "pm." + " and each ticket costs" + this.costPerTicket + "." +  "We have " + timeLeftToWait + " hr to wait. Great we didn't miss the next tour! YAY!");
     	 	    return(true);
 
@@ -66,7 +66,7 @@ var trolleyRideInfo = {
 
 };//END OF 1# FUNCTION//return true
 
-trolleyRideInfo.niceWeather(goodWeather);
+trolleyRideInfo.niceWeather(this.goodWeather);
 /////////////////////////////////////////
 
 

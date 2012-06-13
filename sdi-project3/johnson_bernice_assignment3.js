@@ -70,16 +70,28 @@ trolleyRideInfo.niceWeather(this.goodWeather);
 /////////////////////////////////////////
 
 
+//2# Buy the tickets//how many?//how many tickets/ how much each ticket cost/Math. return number. ticket cost? 
+var trolleyTickets = {
+    howMany : 2,  //number property
+    eachTicketCost : 38, //number property
+    getTickets: function() { //ASSESSOR METHOD.get
+    	var totalForTwoTickets = this.howMany * this.eachTicketCost; //math for two tickets
+    	return totalForTwoTickets; //return amount $76
+    },
+};
+console.log("We just purchased two tickets and they cost $:" + trolleyTickets.getTickets());    
 
-
-//2# Buy the tickets//how many?//how much? what time?//Math. return number. ticket cost? Boolean?
-
-
-
-
-
+//END OF #2 ACCESSOR METHOD PROCEDURE // CODE WORKS
+    
 
 //3# Get on trolley-OBJECT?//Array? stops, return array? array.push?//WHILE LOOP
+Var trolleyRide = {
+	vehicle : "trolley", //object property?
+	tourGuide : "Loo Loo", //string property
+	destinationStops : [] //array property
+
+
+
 
 
 

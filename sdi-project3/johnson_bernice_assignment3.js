@@ -16,7 +16,7 @@ var town = "Washington D.C.",
 var us = {
 	nameE : "Esther", //string property
 	nameB : "I",  //string property
-	getReady : "true", //boolean property
+	getReady : true, //boolean property
 	day : "Friday morning", //string property
 	wakeUp: function(day){  //string argument
 		if (this.day === "Frday morning") {
@@ -45,7 +45,7 @@ var trolleyRideInfo = {
     	 if (niceDay === true) {
     	 	 console.log("The weather is nice enough outside to go on the " + this.name);
     	 	 if ( timeNow <= whatTime) {
-    	 	 	timeLeftToWait = whatTime - timeNow; //MATH
+    	 	 	timeLeftToWait = whatTime - timeNow; {//MATH
     	 		console.log("We asked the ticket master named " +  this.manAtDeskName + " about when the next tour starts today. He says at" + this.whatTime + "pm." + " and each ticket costs" + this.costPerTicket + "." +  "We have " + timeLeftToWait + " hr to wait. Great we didn't miss the next tour! YAY!");
     	 	    return(true);
 

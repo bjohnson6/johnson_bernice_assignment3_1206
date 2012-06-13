@@ -20,7 +20,7 @@ var us = {
 	day : "Friday morning", //string property
 	wakeUp: function(day){  //string argument
 		if (this.day === "Frday morning") {
-            console.log("It\s day 2" + this.day + "of our trip." + this.nameE + "and" + this.nameB + "decide we would like to go on a Trolley Tour of " + town + " today." + weatherCheck + trolleyTimeInfo);
+            console.log("It\'s day 2" + this.day + "of our trip." + this.nameE + "and" + this.nameB + "decide we would like to go on a Trolley Tour of " + town + " today." + weatherCheck + trolleyTimeInfo);
         } else {
     	    console.log("We should plan something else.");
    

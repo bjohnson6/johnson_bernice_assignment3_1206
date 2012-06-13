@@ -14,10 +14,10 @@ var town = "Washington D.C.",
 //ADD LOCAL VARIABLES
 //INTRO TO STORY//PROCEDURE METHOD
 var us = {
-	nameE = "Esther", //string property
-	nameB = "I",  //string property
-	getReady = "true", //boolean property
-	day = "Friday morning", //string property
+	nameE : "Esther", //string property
+	nameB : "I",  //string property
+	getReady : "true", //boolean property
+	day : "Friday morning", //string property
 	wakeUp: function(day){  //string argument
 		if (this.day === "Frday morning") {
             console.log("It\s day 2" + this.day + "of our trip." + this.nameE + "and" + this.nameB + "decide we would like to go on a Trolley Tour of " + town + " today." + weatherCheck + trolleyTimeInfo);

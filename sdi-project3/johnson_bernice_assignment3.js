@@ -13,18 +13,18 @@ var town = "Washington D.C.",
 
 //ADD LOCAL VARIABLES
 
-console.log("We would like to go on a Trolley Tour of " + town + " today." + weatherCheck + trolleyTimeInfo);
+console.log("We would like to go on a Trolley Tour of " + town + " today." + weatherCheck + trolleyTimeInfo); //INTRO TO STORY
 
 //1# Day 2. We decide to go on an Old Town Trolley Tour of Washington D.C.//I head down to the lobby 
 //to get more info on the time it arrives and possibly buy the tickets. Are we in time for the next tour? Is the weather good? (Method Function? conditional?)
 var trolleyRideInfo = {
     name: "Ole Town Trolley Tour", //string property
     where: "lobby",  //string proprty
-    whatTime: 2,
+    whatTime: 2,  //number property
     timeNow: 1,    //number property
     goodWeather: true, //boolean property
     costPerTicket: 38, //number property
-    manAtDeskName: "Sonny",
+    manAtDeskName: "Sonny", //string property
     niceWeather:  function(niceDay){  //METHOD FUNCTION//BOOLEAN ARGUMENT//ARGUMENT CONDITIONAL//NESTED CONDITIONAL//OUTPUT//RETURN
     	 if (niceDay === true) {
     	 	 console.log("The weather is nice enough outside to go on the " + this.name);

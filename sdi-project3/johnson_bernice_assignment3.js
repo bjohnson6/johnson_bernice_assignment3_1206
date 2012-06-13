@@ -88,7 +88,21 @@ console.log("We just purchased two tickets and they cost $:" + trolleyTickets.ge
 Var trolleyRide = {
 	vehicle : "trolley", //object property?
 	tourGuide : "Loo Loo", //string property
-	destinationStops : [] //array property
+	destinationStopsLoopOne : [ //array property
+	"Woodley Park", 
+	"National Zoo", 
+	"Washington National Cathedral",
+	"George Town",
+	"Lincoln Memorial",
+	"Museams"],
+	destinationStopsLoopTwo : [ //array property
+	"Union Station",
+	"Washington Momument",
+	"White House"],
+
+
+
+
 
 
 
@@ -100,6 +114,15 @@ Var trolleyRide = {
 
 //4# We get off at the white house, take a pic of us in front of it. walk back and buy an italian ice and water.//string? return string?
 //OR MAKE THIS A NESTED LOOP TO THE WHILE LOOP???
+var WhiteHouse = {
+    attraction : "White house", //string property
+    surrounding : "lots of people", //string property
+    memories : "take picture of us", //string proprty
+    busRideHome : ["Metro Stop", "Connecticut Ave NW", "Around Dupont Circle", "Stop in front of our Hotel"]; //array proprty
+
+
+
+}
 
 //5# We get back in line for the trolley ride to finish the tour.//FOR LOOP//ARRAY?
 

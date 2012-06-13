@@ -18,20 +18,32 @@ console.log("We would like to go on a Trolley Tour of " + town + " today." + wea
 //1# Day 2. We decide to go on an Old Town Trolley Tour of Washington D.C.//I head down to the lobby 
 //to get more info on the time it arrives and possibly buy the tickets. Are we in time for the next tour? Is the weather good? (Method Function? conditional?)
 var trolleyRideInfo = {
-    "name": "Ole Town Trolley Tour", //string property
-    "where": "lobby",  //string proprty
-    "whatTime": 2,    //number property
-    "goodWeather": true, //boolean property
-    "costPerTicket": 38, //number property
-    "manAtDeskName": "Sonny",
-    "niceWeather": Function(niceDay){  //METHOD FUNCTION//BOOLEAN ARGUMENT//ARGUMENT CONDITIONAL
+    name: "Ole Town Trolley Tour", //string property
+    where: "lobby",  //string proprty
+    whatTime: 2,    //number property
+    goodWeather: true, //boolean property
+    costPerTicket: 38, //number property
+    manAtDeskName: "Sonny",
+    niceWeather:  function(niceDay){  //METHOD FUNCTION//BOOLEAN ARGUMENT//ARGUMENT CONDITIONAL//NESTED CONDITIONAL
     	 if (niceDay === true) {
-    	 	console.log("The weather is nice enough outside to go on the " + this.name);
-    	 	return(true);
-    	 }else{
-    	 	console.log("Looks like we will have to wait until tomorrow when the weather is nicer.");
-    	 	return(false);
-    	 }
+    	 	 console.log("The weather is nice enough outside to go on the " + this.name);
+    	 	 if (whatTime >= 2) {
+    	 		console.log("The time is 1:30 now. " +  this.manAtDeskName + " the ticket master says, the next tour starts at" + this.whatTime + "pm." + " and each ticket costs" + this.costPerTicket + "." + "Great we didn't miss the next tour! YAY!");
+    	 	    return(true);
+
+    	 	 }else{
+    	 	 console.log("Looks like we will have to wait until tomorrow when the weather is nicer.");
+    	 	 return(false);
+    	 
+    	     };
+
+         }else{
+         	if (town === "Washington D.C.") {
+               console.log("We will go later.");
+
+            }else{
+            	console.log("Not going at all.");
+            };  
 
 };
 

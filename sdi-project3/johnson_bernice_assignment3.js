@@ -9,7 +9,7 @@
 var town = "Washington D.C.",
     weatherCheck = "First we need to check the weather",
     trolleyTimeInfo = "then head down to the lobby to get more info about the time the next trolley leaves.";
-
+    timeLeftToWait = 0
 
 //ADD LOCAL VARIABLES
 
@@ -20,15 +20,17 @@ console.log("We would like to go on a Trolley Tour of " + town + " today." + wea
 var trolleyRideInfo = {
     name: "Ole Town Trolley Tour", //string property
     where: "lobby",  //string proprty
-    whatTime: 2,    //number property
+    whatTime: 2,
+    timeNow: 1,    //number property
     goodWeather: true, //boolean property
     costPerTicket: 38, //number property
     manAtDeskName: "Sonny",
-    niceWeather:  function(niceDay){  //METHOD FUNCTION//BOOLEAN ARGUMENT//ARGUMENT CONDITIONAL//NESTED CONDITIONAL
+    niceWeather:  function(niceDay){  //METHOD FUNCTION//BOOLEAN ARGUMENT//ARGUMENT CONDITIONAL//NESTED CONDITIONAL//OUTPUT//RETURN
     	 if (niceDay === true) {
     	 	 console.log("The weather is nice enough outside to go on the " + this.name);
-    	 	 if (whatTime >= 2) {
-    	 		console.log("The time is 1:30 now. " +  this.manAtDeskName + " the ticket master says, the next tour starts at" + this.whatTime + "pm." + " and each ticket costs" + this.costPerTicket + "." + "Great we didn't miss the next tour! YAY!");
+    	 	 if ( timeNow <= whatTime) {
+    	 	 	timeLeftToWait = whatTime - timeNow; //MATH
+    	 		console.log("We asked the ticket master named " +  this.manAtDeskName + " about when the next tour starts today. He says at" + this.whatTime + "pm." + " and each ticket costs" + this.costPerTicket + "." +  "We have " + timeLeftToWait + " hr to wait. Great we didn't miss the next tour! YAY!");
     	 	    return(true);
 
     	 	 }else{
@@ -48,20 +50,8 @@ var trolleyRideInfo = {
 };
 
 trolleyRideInfo.niceWeather(true);
-
-
-
-
-};
-
-
-
-
-
-
-
-
-
+//return true
+//END OF 1# FUNCTION
 
 
 

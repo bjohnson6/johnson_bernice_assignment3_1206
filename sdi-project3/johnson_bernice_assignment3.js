@@ -8,8 +8,8 @@
 
 var town = "Washington D.C.",
     weatherCheck = "First we need to check the weather",
-    trolleyTimeInfo = "then head down to the lobby to get more info about the time the next trolley leaves.";
-    timeLeftToWait = 0
+    trolleyTimeInfo = "then head down to the lobby to get more info about the time the next trolley leaves.",
+    timeLeftToWait = 0;
 
 //ADD LOCAL VARIABLES
 //INTRO TO STORY//PROCEDURE METHOD
@@ -19,7 +19,7 @@ var us = {
 	getReady : true, //boolean property
 	day : "Friday morning", //string property
 	wakeUp: function(day){  //string argument
-		if (this.day === "Frday morning") {
+		if (this.day === "Friday morning") {
             console.log("It\'s day 2" + this.day + "of our trip." + this.nameE + "and" + this.nameB + "decide we would like to go on a Trolley Tour of " + town + " today." + weatherCheck + trolleyTimeInfo);
         } else {
     	    console.log("We should plan something else.");
@@ -45,7 +45,7 @@ var trolleyRideInfo = {
     	 if (niceDay === true) {
     	 	 console.log("The weather is nice enough outside to go on the " + this.name);
     	 	 if ( timeNow <= whatTime) {
-    	 	 	timeLeftToWait = whatTime - timeNow; {//MATH
+    	 	 	timeLeftToWait = whatTime - timeNow; //MATH
     	 		console.log("We asked the ticket master named " +  this.manAtDeskName + " about when the next tour starts today. He says at" + this.whatTime + "pm." + " and each ticket costs" + this.costPerTicket + "." +  "We have " + timeLeftToWait + " hr to wait. Great we didn't miss the next tour! YAY!");
     	 	    return(true);
 
@@ -61,7 +61,8 @@ var trolleyRideInfo = {
                return false;
             }else{
             	console.log("Not going at all.");
-            };  return false;
+                return false;
+            };    
 
 };//END OF 1# FUNCTION//return true
 

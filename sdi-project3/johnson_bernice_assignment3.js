@@ -14,8 +14,8 @@ var town = "Washington D.C.",
 //ADD LOCAL VARIABLES
 //INTRO TO STORY//PROCEDURE METHOD
 var us = {
-	nameE : "Esther", //string property
-	nameB : "I",  //string property
+	nameE : "Esther", //object property
+	nameB : "I",  //object property
 	getReady : true, //boolean property
 	day : "Friday morning", //string property
 	wakeUp: function(day){  //string argument
@@ -129,7 +129,14 @@ var WhiteHouse = {
 
 
 //6# The tour was fun. Now we are back in our room ready to relax and order dinner. We decide to order Sushi. return??
+//RETURN ARRAY OF FOOD? CALIFORNIA ROLL, EEL ROLL, HOUSE COMBO CHOW-MEIN//ARGUMENT ARRRAY//Mutator Method..change drink
+var dinner = {
+    sushi : ["California roll", "EEl Roll", "House Combo Chow-mein"], //array property
+    drink : "soda",
+    relaxNow : "ready to relax and order dinner", 
 
+
+}
 
 
 

@@ -120,45 +120,54 @@ handleData(json2); //calls the json file
 		
     
 
-    
-
-
-
-
-
-
-
-
-//4# We get off at the white house, take a pic of us in front of it. walk back and buy an italian ice and water.//string? return string?
-//while Loop???
+  //4# We get off at the white house, take a pic of us in front of it.//string? return string?
+//For loop nested???
 var whiteHouse = {
-    attraction : "White house", //string property
-    surrounding : "lots of people", //string property
-    memories : "take picture of us", //string proprty
-    busRideHome : ["Metro Stop", "Connecticut Ave NW", "Around Dupont Circle", "Stop in front of our Hotel"]; //array proprty
-    getToWhiteHouse : function(){
-
-
-    }
-
-
-}
-
-//5# We get back in line for the trolley ride to finish the tour.//FOR LOOP//ARRAY?
+    attraction : ["There are lots of people here today.", "We took a cute picture of us together."],
+    busRideHome : [ "Connecticut Ave NW.", "and around Dupont Circle.", "in front of our Hotel stop."], //array proprty
+    getToWhiteHouse : function() { 
+    	for (var i = 0, j = this.attraction.length; i < j; i++) { //for loop
+    		console.log( this.attraction[i] + " Standing in front of the WhiteHouse."); 
+        };
+    	for (var i = 0, j = this.busRideHome.length; i < j; i++) { //nested forloop
+    		console.log("We are on the Metro bus driving down " + this.busRideHome[i]);
+                console.log("Yay we are back at our hotel now! We get off the bus and go to our room.");
+       };
+    },
+ };       
+whiteHouse.getToWhiteHouse();
+//Finished 4# tested and works.
 
 
 
 //6# The tour was fun. Now we are back in our room ready to relax and order dinner. We decide to order Sushi. return??
 //RETURN ARRAY OF FOOD? CALIFORNIA ROLL, EEL ROLL, HOUSE COMBO CHOW-MEIN//ARGUMENT ARRRAY//Mutator Method..change drink
 var dinner = {
-    sushi : ["California roll", "EEl Roll", "House Combo Chow-mein"], //array property
+    sushi : [" One California roll", "EEl Roll", " and the House Combo Chow-mein"], //array property
     drink : "soda",
-    relaxNow : "ready to relax and order dinner", 
-    getSushi: function (sushi);
+    dinner : true,
+    getSushi: function (sushi){ //array argument
+        console.log("Let\'s order sushi take out from that place WoknRoll down the street for dinner. "); 
+        if (this.dinner === true);
+        console.log("We call and place an order of " + this.sushi + " can\'t wait until it gets here.")
+        return sushi;
+    };
 
+    	var waitInLine = 15;
+    	var timeStillWaitingInLine = 0;
+         while (waitInLine > timeStillWaitingInLine) {
+         	   console.log("The wait will be " + waitInLine + " minutes until our sushi arrives.");
+               waitInLine -=5
+         };      
+               var dinner.drink = "icetea"; //(mutator method changed my drink from soda to icetea)
+               console.log("Our food is here. It taste so good! I think I am going to have " + this.drink + "instead of soda" + ".");
 
+};
+dinner.getSushi(sushi);
 
-}
+//Finished 6#//need to test now.
+    
+
 //7# Time for bed. Object Property, Object Argument, object return
 var bed = {              //object
 	type : "king size",  //object property
@@ -174,7 +183,7 @@ var bed = {              //object
 }; 
 bed.goToSleep(bed); //calling the method
 console.log("The day is over and I can\'t wait to go zzz in my nice big "+ bed.goToSleep(bed)); //console.log the return
-////End of Object Property//Code works
+////End of Object Property//Code works///////////////////////////////
 //Function.Method Calls//
 //1#
 //2#

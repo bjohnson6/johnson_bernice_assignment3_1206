@@ -18,16 +18,16 @@ var us = {
 	nameB : "I",  //object property
 	getReady : true, //boolean property
 	day : "Friday morning", //string property
-	wakeUp: function(day){  //string argument
+	wakeUp: function(theDay){  //string argument
 		if (this.day === "Friday morning") { 
-            console.log("It\'s day two " + this.day + " of our trip. " + this.nameE + " and " + this.nameB + " decide we would like to go on a Trolley Tour of " + town + " today." + weatherCheck + " " + trolleyTimeInfo);
+            console.log("It\'s day two, " + this.day + " of our trip. " + this.nameE + " and " + this.nameB + " decide we would like to go on a Trolley Tour of " + town + " today. " + weatherCheck + " " + trolleyTimeInfo);
         } else {
     	    console.log("We should plan something else.");
    
         };  
     }    
 
-}; //END PROCEDURE FUNCTION 
+}; //END PROCEDURE FUNCTION//Fixed
 us.wakeUp(day);	
 ////////////////////////////////////////
 

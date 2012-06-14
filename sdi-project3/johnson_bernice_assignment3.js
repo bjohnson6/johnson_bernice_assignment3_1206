@@ -65,9 +65,9 @@ var trolleyRideInfo = {
                 return false;
             };    
 
-};//END OF 1# FUNCTION//return true
+};//END OF 1# FUNCTION//return true //kinda works.
 
-trolleyRideInfo.niceWeather(goodWeather);
+trolleyRideInfo.niceWeather(this.goodWeather);
 /////////////////////////////////////////
 
 
@@ -110,9 +110,10 @@ var trolleyRide = {
 				var  trolley = json.trolleyRide[i];
 				console.log( "02:" + trolley.destinationStopsLoopOne);
 			};	
-
+                //ADD ANOTHER FOR LOOP
 		};
 trolleyRide.getOnTrolley();
+//var json2 = handleData; ????? I keep getting the error that my json2 is undefined?
 handleData(json2); //calls the json file                    
 
 		

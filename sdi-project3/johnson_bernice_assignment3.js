@@ -85,7 +85,7 @@ console.log("We just purchased two tickets and they cost $:" + trolleyTickets.ge
     
 
 //3# Get on trolley-OBJECT?//Array? stops, return array? array.push?//WHILE LOOP
-Var trolleyRide = {
+var trolleyRide = {
 	vehicle : "trolley", //object property?
 	tourGuide : "Loo Loo", //string property
 	destinationStopsLoopOne : [ //array property
@@ -98,7 +98,11 @@ Var trolleyRide = {
 	destinationStopsLoopTwo : [ //array property
 	"Union Station",
 	"Washington Momument",
-	"White House"],
+	"White House"
+	],
+	getOnTrolley : function() {
+
+	}
 
 
 
@@ -113,8 +117,8 @@ Var trolleyRide = {
 
 
 //4# We get off at the white house, take a pic of us in front of it. walk back and buy an italian ice and water.//string? return string?
-//OR MAKE THIS A NESTED LOOP TO THE WHILE LOOP???
-var WhiteHouse = {
+//ForLoop???
+var whiteHouseTour = {
     attraction : "White house", //string property
     surrounding : "lots of people", //string property
     memories : "take picture of us", //string proprty
@@ -134,6 +138,8 @@ var dinner = {
     sushi : ["California roll", "EEl Roll", "House Combo Chow-mein"], //array property
     drink : "soda",
     relaxNow : "ready to relax and order dinner", 
+    getSushi: function (sushi);
+
 
 
 }

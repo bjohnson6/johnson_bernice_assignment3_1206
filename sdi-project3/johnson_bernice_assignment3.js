@@ -84,7 +84,7 @@ console.log("We just purchased two tickets and they cost $:" + trolleyTickets.ge
 //END OF #2 ACCESSOR METHOD PROCEDURE // CODE WORKS
     
 
-//3# Get on trolley-OBJECT?//Array? stops, return array? array.push?//WHILE LOOP
+//3# Get on trolley-OBJECT?//Array? stops, return array? array.push?//For LOOP
 var trolleyRide = {
 	vehicle : "trolley", //object property?
 	tourGuide : "Loo Loo", //string property
@@ -101,6 +101,14 @@ var trolleyRide = {
 	"White House"
 	],
 	getOnTrolley : function() {
+		//FORLOOP CODE HERE
+		//for (var key in trolleyRide) {
+    console.log("Our first tour loop we will drive by the following places: " + key + ", value: ", trolleyRide[key]);
+      //NEED TO PUT MY JSON FILE IN THE FORLOOP///
+//console.log(trolleyRide.vehicle);
+
+};
+
 
 	}
 
@@ -117,13 +125,16 @@ var trolleyRide = {
 
 
 //4# We get off at the white house, take a pic of us in front of it. walk back and buy an italian ice and water.//string? return string?
-//ForLoop???
-var whiteHouseTour = {
+//while Loop???
+var whiteHouse = {
     attraction : "White house", //string property
     surrounding : "lots of people", //string property
     memories : "take picture of us", //string proprty
     busRideHome : ["Metro Stop", "Connecticut Ave NW", "Around Dupont Circle", "Stop in front of our Hotel"]; //array proprty
+    getToWhiteHouse : function(){
 
+
+    }
 
 
 }

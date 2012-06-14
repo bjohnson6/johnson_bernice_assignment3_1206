@@ -18,9 +18,9 @@ var us = {
 	nameB : "I",  //object property
 	getReady : true, //boolean property
 	day : "Friday morning", //string property
-	wakeUp: function(theDay){  //string argument
+	wakeUp: function(day){  //string argument
 		if (this.day === "Friday morning") { 
-            console.log("It\'s day two, " + this.day + " of our trip. " + this.nameE + " and " + this.nameB + " decide we would like to go on a Trolley Tour of " + town + " today. " + weatherCheck + " " + trolleyTimeInfo);
+            console.log(this.nameE + " and " + this.nameB +" wake up to a beautiful " + this.day + " We decided it would be an awesome idea to go on a Trolley Tour of " + town + " today. " + weatherCheck + " " + trolleyTimeInfo);
         } else {
     	    console.log("We should plan something else.");
    
@@ -28,7 +28,7 @@ var us = {
     }    
 
 }; //END PROCEDURE FUNCTION//Fixed
-us.wakeUp(day);	
+us.wakeUp("Friday morning");	
 ////////////////////////////////////////
 
 

@@ -101,11 +101,23 @@ var trolleyRide = {
 	"White House"
 	],
 	getOnTrolley : function() {
-		//FORLOOP CODE HERE
-		//for (var key in trolleyRide) {
-    console.log("Our first tour loop we will drive by the following places: " + key + ", value: ", trolleyRide[key]);
-      //NEED TO PUT MY JSON FILE IN THE FORLOOP///
-//console.log(trolleyRide.vehicle);
+		console.log("The" + this.vehicle + "has arrived and we are greeted by " + this.tourGuide + " the bubbly tour guide. We sit down in our seats and get ready to enjoy the ride.");
+		console.log("The first tour loop we will be pasing these locations.");
+	};
+		var handleData = function (json) {
+			for (var i = 0; i < json.trolleyRide.length; i++){ //json forloop
+				var  trolley = json.trolleyRide[i];
+				console.log( "02:" + trolley.destinationStopsLoopOne);
+			};	
+
+		};
+		getOnTrolley();
+		handleData(json); //calls the json file                    
+
+		
+    
+
+    
 
 };
 

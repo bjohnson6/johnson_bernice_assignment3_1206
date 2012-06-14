@@ -158,10 +158,22 @@ var dinner = {
 
 
 }
+//7# Time for bed. Object Property, Object Argument, object return
+var bed = {              //object
+	type : "king size",  //object property
+	feel : "comfy",
+	nice : " and soft bed.",
+	dream : "Sweet dreams to me!",
+	goToSleep: function (bed){ //object arguement
+	   var goToSleeps = (this.type + " "  + this.feel+ this.nice + " " + this.dream);
+	   return goToSleeps; //object return..king size, comfy, and soft bed. Sweet dreams to me!
+       
+    },
 
-
-
-
+}; 
+bed.goToSleep(bed); //calling the method
+console.log("The day is over and I can\'t wait to go zzz in my nice big "+ bed.goToSleep(bed)); //console.log the return
+////End of Object Property//Code works
 //Function.Method Calls//
 //1#
 //2#

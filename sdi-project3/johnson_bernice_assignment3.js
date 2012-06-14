@@ -19,12 +19,13 @@ var us = {
 	getReady : true, //boolean property
 	day : "Friday morning", //string property
 	wakeUp: function(day){  //string argument
-		if (this.day === "Friday morning") {
-            console.log("It\'s day 2" + this.day + "of our trip." + this.nameE + "and" + this.nameB + "decide we would like to go on a Trolley Tour of " + town + " today." + weatherCheck + trolleyTimeInfo);
+		if (this.day === "Friday morning") { 
+            console.log("It\'s day two " + this.day + " of our trip. " + this.nameE + " and " + this.nameB + " decide we would like to go on a Trolley Tour of " + town + " today." + weatherCheck + " " + trolleyTimeInfo);
         } else {
     	    console.log("We should plan something else.");
    
         };  
+    }    
 
 }; //END PROCEDURE FUNCTION 
 us.wakeUp(day);	
@@ -66,7 +67,7 @@ var trolleyRideInfo = {
 
 };//END OF 1# FUNCTION//return true
 
-trolleyRideInfo.niceWeather(this.goodWeather);
+trolleyRideInfo.niceWeather(goodWeather);
 /////////////////////////////////////////
 
 
@@ -101,8 +102,8 @@ var trolleyRide = {
 	"White House"
 	],
 	getOnTrolley : function() {
-		console.log("The" + this.vehicle + "has arrived and we are greeted by " + this.tourGuide + " the bubbly tour guide. We sit down in our seats and get ready to enjoy the ride.");
-		console.log("The first tour loop we will be pasing these locations.");
+		console.log("The " + this.vehicle + " has arrived and we are greeted by " + this.tourGuide + " the bubbly tour guide. We sit down in our seats and get ready to enjoy the ride.");
+		console.log("On our first tour loop we will be passing these locations.");
 	};
 		var handleData = function (json) {
 			for (var i = 0; i < json.trolleyRide.length; i++){ //json forloop
@@ -111,23 +112,13 @@ var trolleyRide = {
 			};	
 
 		};
-		getOnTrolley();
-		handleData(json); //calls the json file                    
+trolleyRide.getOnTrolley();
+handleData(json2); //calls the json file                    
 
 		
     
 
     
-
-};
-
-
-	}
-
-
-
-
-
 
 
 

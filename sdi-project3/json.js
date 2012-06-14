@@ -2,7 +2,7 @@
 //JSON file
 //Deliverable 3
 
-var json ={var json ={
+var json ={
 	"trolleyRide" : {
 		"01" : {
 	      "vehicle" : "trolley", //object property?

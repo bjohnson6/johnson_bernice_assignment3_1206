@@ -104,7 +104,8 @@ var trolleyRide = {
 	getOnTrolley : function() {
 		console.log("The " + this.vehicle + " has arrived and we are greeted by " + this.tourGuide + " the bubbly tour guide. We sit down in our seats and get ready to enjoy the ride.");
 		console.log("On our first tour loop we will be passing these locations.");
-	};
+	},
+};	
 		var handleData = function (json) {
 			for (var i = 0; i < json.trolleyRide.length; i++){ //json forloop
 				var  trolley = json.trolleyRide[i];

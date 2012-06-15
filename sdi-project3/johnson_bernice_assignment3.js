@@ -107,9 +107,9 @@ var trolleyRide = {
 	},
 };	
 		var handleData = function (json) {
-			for (var i = 0; i < json.trolleyRide.length; i++){ //json forloop
-				var  trolley = json.trolleyRide[i];
-				console.log( "id: " + trolley.id + "ride:" + trolley.destinationStopsLoopOne);
+			for (var i = 2; i < json.trolleyRide.length; i++){ //json forloop
+				var  trolley = json.trolleyRide[1];
+				console.log( "id: " + trolley.destinationStopsLoopOne);
 			};	
                 //ADD ANOTHER FOR LOOP
 		};
@@ -160,11 +160,13 @@ var dinner = {
          while (waitInLine > timeStillWaitingInLine) {
          	   console.log("The wait will be " + waitInLine + " minutes until our sushi arrives.");
                waitInLine -=5;
-         };      
-               var dinner = { 
-               	   drink : "icetea",
-                	newDrink : function (){
-                    console.log("Our food is here. It taste so good! I think I am going to have " + this.drink + "to drink.");
+          };     
+               console.log("Our food is here. It taste so good! I think I am going to have " + this.drink + "to drink.");
+              
+           //    var dinner = { 
+           //    	   drink : "icetea",
+            //    	newDrink : function (){
+                    
                	}  
                 //(mutator method changed my drink from soda to icetea)
          };      

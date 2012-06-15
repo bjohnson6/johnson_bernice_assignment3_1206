@@ -33,14 +33,15 @@ var json ={
 var json2 = {
 	"trolleyRide" : [
 	  {
-		"id" : 01,
+		"id" : 11,
 	      "vehicle" : "trolley", //object property?
 	      "tourGuide" : "Loo Loo" //string property
 	     }, 
 	     {
-	     "id" : 02,
-	       "destinationStopsLoopOne" : 
-	       [ //array property
+	     "id" : 12,
+	         "destinationStopsLoopOne" : 
+	         [
+	        //array property
 	       "Woodley Park", 
 	       "National Zoo", 
 	       "Washington National Cathedral",
@@ -49,9 +50,9 @@ var json2 = {
 	       "Museams"]
 	      },
 	      {
-	      "id" : 03,
+	      "id" : 13,
 	        "destinationStopsLoopTwo" : 
-	        [ //array property
+	        [//array property
 	        "Union Station",
 	        "Washington Momument",
 	        "White House"

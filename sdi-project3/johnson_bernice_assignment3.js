@@ -114,7 +114,7 @@ var trolleyRide = {
                 //ADD ANOTHER FOR LOOP
 		};
 trolleyRide.getOnTrolley();
-//var json2 = handleData; ????? I keep getting the error that my json2 is undefined?
+//var json2 = handleData; ????? I keep getting the error that my json2 is undefined?//FIXED SOME OF IT
 handleData(json2); //calls the json file                    
 
 		
@@ -150,19 +150,22 @@ var dinner = {
         console.log("Let\'s order sushi take out from that place WoknRoll down the street for dinner. "); 
         if (this.dinner === true) {
         console.log("We call and place an order of " + this.sushi + " can\'t wait until it gets here.");
-        return sushi;
-        }else{ 
-           console.log("No sushi for us.");
-    };
-
-    	var waitInLine = 15;
+            var waitInLine = 15;
     	var timeStillWaitingInLine = 0;
          while (waitInLine > timeStillWaitingInLine) {
          	   console.log("The wait will be " + waitInLine + " minutes until our sushi arrives.");
                waitInLine -=5;
           };     
                console.log("Our food is here. It taste so good! I think I am going to have " + this.drink + "to drink.");
-              
+                 
+
+
+
+        }else{ 
+           console.log("No sushi for us.");
+    };     return sushi;
+
+    	
            //    var dinner = { 
            //    	   drink : "icetea",
             //    	newDrink : function (){
@@ -173,7 +176,7 @@ var dinner = {
      }
 };
 dinner.getSushi(this.sushi);
-dinner.newDrink();
+//dinner.newDrink();
 //Finished 6#//need to test now.
     
 

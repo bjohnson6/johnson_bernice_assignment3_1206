@@ -17,9 +17,9 @@ var us = {
 	nameE : "Esther", //object property
 	nameB : "I",  //object property
 	getReady : true, //boolean property
-	day : "Friday morning", //string property
+	day : "Friday morning.", //string property
 	wakeUp: function(day){  //string argument
-		if (this.day === "Friday morning") { 
+		if (this.day === "Friday morning.") { 
             console.log(this.nameE + " and " + this.nameB +" wake up to a beautiful " + this.day + " We decided it would be an awesome idea to go on a Trolley Tour of " + town + " today. " + weatherCheck + " " + trolleyTimeInfo);
         } else {
     	    console.log("We should plan something else.");
@@ -27,7 +27,7 @@ var us = {
         };  
     }    
 
-}; //END PROCEDURE FUNCTION//Fixed
+}; //END PROCEDURE FUNCTION//Fixed//WORKS////
 us.wakeUp("Friday morning");	
 ////////////////////////////////////////
 
@@ -42,8 +42,8 @@ var trolleyRideInfo = {
     goodWeather: true, //boolean property
     costPerTicket: 38, //number property
     manAtDeskName: "Sonny", //string property
-    niceWeather: function(niceDay){  //METHOD FUNCTION//BOOLEAN ARGUMENT//ARGUMENT CONDITIONAL//NESTED CONDITIONAL//OUTPUT//RETURN
-    	 if (niceDay === true) {
+    niceWeather: function(goodWeather){  //METHOD FUNCTION//BOOLEAN ARGUMENT//ARGUMENT CONDITIONAL//NESTED CONDITIONAL//OUTPUT//RETURN
+    	 if (this.goodWeather === true) {
     	 	 console.log("The weather is nice enough outside to go on the " + this.name);
     	 	 if ( this.timeNow <= this.whatTime) {
     	 	 	 var timeLeftToWait = this.whatTime - this.timeNow; //MATH
@@ -63,12 +63,13 @@ var trolleyRideInfo = {
             }else{
             	console.log("Not going at all.");
                 return false;
-            };    
-
-};//END OF 1# FUNCTION//return true //kinda works.
+            }    
+        };
+   }     
+};//END OF 1# FUNCTION//return true //FIXED/////////
 
 trolleyRideInfo.niceWeather(this.goodWeather);
-/////////////////////////////////////////
+/////////////////////////////////////////FIXED SYNTAX ERRORS///////////////////
 
 
 //2# Buy the tickets//how many?//how many tickets/ how much each ticket cost/Math. return number. ticket cost? 
@@ -136,7 +137,7 @@ var whiteHouse = {
     },
  };       
 whiteHouse.getToWhiteHouse();
-//Finished 4# tested and works.
+//Finished 4# tested and works.//////WORKS/////
 
 
 
@@ -156,28 +157,28 @@ var dinner = {
          	   console.log("The wait will be " + waitInLine + " minutes until our sushi arrives.");
                waitInLine -=5;
           };     
-               console.log("Our food is here. It taste so good! I think I am going to have " + this.drink + "to drink.");
+               console.log("Our food is here. It taste so good! I think I am going to have " + this.drink + " to drink.");
                  
-
-
-
-        }else{ 
+  }else{ 
            console.log("No sushi for us.");
-    };     return sushi;
+    };     return sushi;   
 
-    	
+//////////////    	///////FIXED MY WHILE LOOP//////////////////
            //    var dinner = { 
            //    	   drink : "icetea",
             //    	newDrink : function (){
                     
-               	}  
+         
                 //(mutator method changed my drink from soda to icetea)
-         };      
-     }
+               
+        }
 };
 dinner.getSushi(this.sushi);
 //dinner.newDrink();
 //Finished 6#//need to test now.
+
+
+      
     
 
 //6# Time for bed. Object Property, Object Argument, object return
@@ -195,7 +196,7 @@ var bed = {              //object
 }; 
 bed.goToSleep(bed); //calling the method
 console.log("The day is over and I can\'t wait to go zzz in my nice big "+ bed.goToSleep(bed)); //console.log the return
-
+///END OF #6//TESTED WORKS
 //7# String Function 
 var relaxInRoom = function (){ //string function
          var snackTea = "hotTea.";

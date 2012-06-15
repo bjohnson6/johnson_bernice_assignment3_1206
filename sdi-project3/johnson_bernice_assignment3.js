@@ -75,7 +75,7 @@ trolleyRideInfo.niceWeather(this.goodWeather);
 var trolleyTickets = {
     howMany : 2,  //number property
     eachTicketCost : 38, //number property
-    getTickets: function() { //ASSESSOR METHOD.get
+    getTickets: function(howMany) { //ASSESSOR METHOD.get //Number argument
     	var totalForTwoTickets = this.howMany * this.eachTicketCost; //math for two tickets
     	return totalForTwoTickets; //return amount $76
     },
@@ -140,7 +140,7 @@ whiteHouse.getToWhiteHouse();
 
 
 
-//6# The tour was fun. Now we are back in our room ready to relax and order dinner. We decide to order Sushi. return??
+//5# The tour was fun. Now we are back in our room ready to relax and order dinner. We decide to order Sushi. return??
 //RETURN ARRAY OF FOOD? CALIFORNIA ROLL, EEL ROLL, HOUSE COMBO CHOW-MEIN//ARGUMENT ARRRAY//Mutator Method..change drink
 var dinner = {
     sushi : [" One California roll", "EEl Roll", " and the House Combo Chow-mein"], //array property
@@ -148,27 +148,34 @@ var dinner = {
     dinner : true,
     getSushi: function (sushi){ //array argument
         console.log("Let\'s order sushi take out from that place WoknRoll down the street for dinner. "); 
-        if (this.dinner === true);
-        console.log("We call and place an order of " + this.sushi + " can\'t wait until it gets here.")
+        if (this.dinner === true) {
+        console.log("We call and place an order of " + this.sushi + " can\'t wait until it gets here.");
         return sushi;
+        }else{ 
+           console.log("No sushi for us.");
     };
 
     	var waitInLine = 15;
     	var timeStillWaitingInLine = 0;
          while (waitInLine > timeStillWaitingInLine) {
          	   console.log("The wait will be " + waitInLine + " minutes until our sushi arrives.");
-               waitInLine -=5
+               waitInLine -=5;
          };      
-               var dinner.drink = "icetea"; //(mutator method changed my drink from soda to icetea)
-               console.log("Our food is here. It taste so good! I think I am going to have " + this.drink + "instead of soda" + ".");
-
+               var dinner = { 
+               	   drink : "icetea",
+                	newDrink : function (){
+                    console.log("Our food is here. It taste so good! I think I am going to have " + this.drink + "to drink.");
+               	};  
+                //(mutator method changed my drink from soda to icetea)
+         };      
+     };
 };
-dinner.getSushi(sushi);
-
+dinner.getSushi(this.sushi);
+dinner.newDrink.();
 //Finished 6#//need to test now.
     
 
-//7# Time for bed. Object Property, Object Argument, object return
+//6# Time for bed. Object Property, Object Argument, object return
 var bed = {              //object
 	type : "king size",  //object property
 	feel : "comfy",
@@ -183,13 +190,25 @@ var bed = {              //object
 }; 
 bed.goToSleep(bed); //calling the method
 console.log("The day is over and I can\'t wait to go zzz in my nice big "+ bed.goToSleep(bed)); //console.log the return
+
+//7# String Function 
+var relaxInRoom = function (){ //string function
+         var snackTea = "hotTea.";
+         var snackCookie = " peanut butter cookie";
+         var snack = console.log("I woke up in the middle of the night craving a " + snackCookie + " and some " + snackTea);
+         var eatSnack =  console.log("I decided to use the coffee maker to make some " + snackTea + " It made me feel warm and toasty and I went back to zzz.");
+         
+         return snack + eatSnack; //return string 
+     };
+relaxInRoom();
+//End of 7# string function
+
 ////End of Object Property//Code works///////////////////////////////
 //Function.Method Calls//
 //1#
 //2#
 //3#
-//4#
-//5#
+//
 //6#
 
 /////END////////////////

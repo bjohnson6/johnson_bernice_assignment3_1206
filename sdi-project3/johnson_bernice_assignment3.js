@@ -109,7 +109,7 @@ var trolleyRide = {
 		var handleData = function (json) {
 			for (var i = 0; i < json.trolleyRide.length; i++){ //json forloop
 				var  trolley = json.trolleyRide[i];
-				console.log( "02:" + trolley.destinationStopsLoopOne);
+				console.log( "id: " + trolley.id + "ride:" + trolley.destinationStopsLoopOne);
 			};	
                 //ADD ANOTHER FOR LOOP
 		};
@@ -165,13 +165,13 @@ var dinner = {
                	   drink : "icetea",
                 	newDrink : function (){
                     console.log("Our food is here. It taste so good! I think I am going to have " + this.drink + "to drink.");
-               	};  
+               	}  
                 //(mutator method changed my drink from soda to icetea)
          };      
-     };
+     }
 };
 dinner.getSushi(this.sushi);
-dinner.newDrink.();
+dinner.newDrink();
 //Finished 6#//need to test now.
     
 
@@ -199,8 +199,9 @@ var relaxInRoom = function (){ //string function
          var eatSnack =  console.log("I decided to use the coffee maker to make some " + snackTea + " It made me feel warm and toasty and I went back to zzz.");
          
          return snack + eatSnack; //return string 
-     };
+};
 relaxInRoom();
+
 //End of 7# string function
 
 ////End of Object Property//Code works///////////////////////////////

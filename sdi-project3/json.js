@@ -30,13 +30,15 @@ var json ={
 	    }
 };
 
-var json2 ={
+var json2 = {
 	"trolleyRide" : [
-		"01" : {
+	  {
+		"id" : 01,
 	      "vehicle" : "trolley", //object property?
 	      "tourGuide" : "Loo Loo" //string property
 	     }, 
-	     "02" : {
+	     {
+	     "id" : 02,
 	       "destinationStopsLoopOne" : 
 	       [ //array property
 	       "Woodley Park", 
@@ -46,16 +48,16 @@ var json2 ={
 	       "Lincoln Memorial",
 	       "Museams"]
 	      },
-	      "03" : {
+	      {
+	      "id" : 03,
 	        "destinationStopsLoopTwo" : 
 	        [ //array property
 	        "Union Station",
 	        "Washington Momument",
 	        "White House"
 	         ],
-	       }
+	       },
 	         
 	    ]
 };
 	
-};
